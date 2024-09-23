@@ -4,7 +4,9 @@ import userEvent from '@testing-library/user-event';
 
 import MainContent from './MainContent';
 
-describe('MainContent', () => {
+# My Test
+
+describe('MainContent', () => 
   it('should render a button', () => {
     render(<MainContent />);
 
@@ -13,6 +15,8 @@ describe('MainContent', () => {
 
   it('should show the help area after clicking the button', async () => {
     render(<MainContent />);
+
+
 
     const button = screen.getByRole('button');
     await userEvent.click(button);
